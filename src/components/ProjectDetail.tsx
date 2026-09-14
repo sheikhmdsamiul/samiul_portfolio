@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { CheckCircle2, X } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Github, X } from "lucide-react";
 import type { Project } from "../data/projects";
 import { EASE } from "../lib/motion";
 
@@ -113,6 +113,19 @@ export default function ProjectDetail({ project, onClose }: { project: Project |
 
             <h3 className="mt-4 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">{p.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">{p.summary}</p>
+
+            {p.github && (
+              <a
+                href={p.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 rounded-lg border-2 border-ink bg-ink px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-paper shadow-blk-sm transition hover:bg-accent hover:text-paper"
+              >
+                <Github size={14} />
+                View on GitHub
+                <ArrowUpRight size={13} />
+              </a>
+            )}
 
             {p.metric && (
               <div className="mt-5 inline-flex items-center gap-3 rounded-xl border-2 border-ink bg-paper shadow-blk-sm px-4 py-3">

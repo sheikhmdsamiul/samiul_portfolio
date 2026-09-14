@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, GripVertical } from "lucide-react";
+import { ArrowUpRight, Github, GripVertical } from "lucide-react";
 import type { Project } from "../data/projects";
 import { EASE, stagger, viewportOnce } from "../lib/motion";
 import SectionHeading from "./ui/SectionHeading";
@@ -109,8 +109,22 @@ function ProjectCard({
                 </span>
               </span>
             )}
-            <span className="ml-auto flex items-center gap-1 font-mono text-[10px] uppercase tracking-[0.16em] text-ink transition group-hover:text-accent-dark">
-              Open case <ArrowUpRight size={13} />
+            <span className="ml-auto flex items-center gap-3">
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  aria-label={`${project.title} — GitHub repository`}
+                  className="grid h-8 w-8 place-items-center rounded-lg border-2 border-ink text-ink transition group-hover:bg-accent group-hover:text-paper"
+                >
+                  <Github size={14} />
+                </a>
+              )}
+              <span className="flex items-center gap-1 font-mono text-[10px] uppercase tracking-[0.16em] text-ink transition group-hover:text-accent-dark">
+                Open case <ArrowUpRight size={13} />
+              </span>
             </span>
           </div>
         </div>

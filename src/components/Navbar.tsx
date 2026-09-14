@@ -53,7 +53,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between gap-3">
           <a href="#home" className="group flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center border-2 border-ink bg-ink font-display text-lg font-bold text-accent shadow-blk-sm transition group-hover:bg-accent group-hover:text-paper">
-              {profile.monogram}
+              {'#'}{'07'}
             </span>
             <span className="leading-none">
               <span className="block font-display text-[13px] font-bold uppercase tracking-wide text-ink">

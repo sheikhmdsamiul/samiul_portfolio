@@ -22,6 +22,7 @@ export interface Project {
   context: string;
   stack: string[];
   metric?: ProjectMetric;
+  github?: string;
   flow: ProjectFlow;
   aiPipeline?: boolean;
   visual: "bars" | "network" | "chat" | "text" | "shield";
@@ -39,6 +40,7 @@ export const projects: Project[] = [
     context: "Production — industry",
     stack: ["Python", "Django", "PostgreSQL", "Celery", "Docker", "Puppeteer", "openpyxl"],
     metric: { value: "Live", label: "Production platform" },
+    github: "https://github.com/sheikhmdsamiul/renewable-lesotho-rbf-platform-1",
     flow: {
       problem:
         "Support renewable-energy vendors in Lesotho through a Results-Based Financing platform — from registration and verification through tender workflows and reporting.",
@@ -64,6 +66,7 @@ export const projects: Project[] = [
     context: "Research",
     stack: ["Python", "TensorFlow", "GloVe", "NLP"],
     metric: { value: "0.9275", label: "AUC" },
+    github: "https://github.com/sheikhmdsamiul/Question-Pair-Similarity-Classification",
     aiPipeline: true,
     flow: {
       problem: "Determine whether two questions are semantically similar — a core NLP matching task.",
@@ -89,6 +92,7 @@ export const projects: Project[] = [
     context: "Personal",
     stack: ["Python", "Hugging Face", "LangChain", "Groq API", "Streamlit", "OCR", "Summa-TextRank"],
     metric: { value: "RAG", label: "with re-ranking" },
+    github: "https://github.com/sheikhmdsamiul/Educational-Content-Enhancement-Using-LLMs",
     aiPipeline: true,
     flow: {
       problem:
@@ -115,6 +119,7 @@ export const projects: Project[] = [
     category: ["AI/ML", "NLP"],
     context: "Research",
     stack: ["Python", "PyTorch", "Hugging Face", "PyTorch Lightning"],
+    github: "https://github.com/sheikhmdsamiul/Fine-tuned-T5-for-Text-Summarization",
     aiPipeline: true,
     flow: {
       problem: "Produce coherent, abstractive summaries of long-form text.",
@@ -140,6 +145,7 @@ export const projects: Project[] = [
     context: "Academic",
     stack: ["Python", "Scikit-learn", "TensorFlow/Keras", "NLTK"],
     metric: { value: "80%", label: "Accuracy" },
+    github: "https://github.com/sheikhmdsamiul/Offensive-Language-Classification",
     aiPipeline: true,
     flow: {
       problem: "Detect offensive and toxic language robustly across noisy, imbalanced text.",
