@@ -77,11 +77,11 @@ export default function Navbar() {
                 {active === link.href && (
                   <motion.span
                     layoutId="nav-pill"
-                    className="absolute inset-0 -z-10 bg-ink shadow-blk-sm"
+                    className="absolute inset-0 bg-ink shadow-blk-sm"
                     transition={{ type: "spring", stiffness: 420, damping: 34 }}
                   />
                 )}
-                {link.label}
+                <span className="relative z-10">{link.label}</span>
               </a>
             ))}
           </div>

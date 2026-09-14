@@ -10,20 +10,19 @@ const clusters = [
     caption: "NSU · community · organizing",
     accent: "bg-ink",
     items: [
-      { label: "NSU HR Club", sub: "Active member" },
-      { label: "NSU CEC Club", sub: "Member" },
+      { label: "NSU HR Club", sub: "General member · 2021–2023" },
+      { label: "NSU CEC", sub: "General member · 2019–2021" },
       { label: "Organized 'Cybernauts 2019'", sub: "CEC's flagship event" },
     ],
   },
   {
     Icon: Trophy,
     title: "Sports",
-    caption: "three teams · three eras",
+    caption: "two teams · two eras",
     accent: "bg-accent",
     items: [
-      { label: "NSU Football Team", sub: "Player" },
-      { label: "College Football Team", sub: "Player" },
-      { label: "School Cricket Team", sub: "Player" },
+      { label: "NSU Football Team", sub: "Player · 2020" },
+      { label: "College Football Team", sub: "Player · 2017–2018" },
     ],
   },
   {

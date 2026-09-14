@@ -63,9 +63,6 @@ export default function Footer() {
           <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-faint">
             © {new Date().getFullYear()} {profile.shortName} — designed & built by me
           </p>
-          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-faint">
-            sources of truth: the two CVs — no filler
-          </p>
         </div>
       </div>
     </footer>
